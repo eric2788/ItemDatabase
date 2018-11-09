@@ -11,6 +11,6 @@
 - /itembase upload <物品名稱> - 上傳物品
 - /itembase list - 列出已上傳的物品
 
-(僅列出自己上傳的物品)
+(僅適用於自己上傳的物品)
 
 ### [下載插件](http://destyy.com/wXnuMN)
