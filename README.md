@@ -13,4 +13,4 @@
 ## 注意
 一開始插件不會啟動，直到你在 config.yml 把 enabled 調成 true
 
-### [下載插件](https://destyy.com/wXnuMN)
+### [下載插件](http://destyy.com/wXnuMN)
