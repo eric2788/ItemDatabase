@@ -10,7 +10,7 @@
 ## 注意
 一開始會生成默認 SQL 資料設定，因此并不會啟用插件
 
-請自行到 config.yml 修改 SQL 設定然後把 enable 設定為 true 方可啟動插件
+請自行到 config.yml 修改 SQL 設定然後把 enabled 設定為 true 方可啟動插件
 
 ### 有建議歡迎使用 issue
 
