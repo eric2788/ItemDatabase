@@ -1,0 +1,8 @@
+name: ItemDatabase
+main: com.ericlam.main.ItemDatabase
+version: 1.0
+authors: [Eric Lam]
+api-version: 1.13
+commands:
+  itembase:
+    description: main command

@@ -1,0 +1,12 @@
+MySQL:
+  host: 127.0.0.1
+  port: 3306
+  username: username
+  password: password
+  database: database
+  table: ItemDB
+  use-SSL: false
+  Pool:
+    name: Pool
+    min-size: 5
+    max-size: 10
