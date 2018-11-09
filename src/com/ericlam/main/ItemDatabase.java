@@ -58,6 +58,7 @@ public class ItemDatabase extends JavaPlugin {
         }
 
         if (args.length < 1) {
+            sender.sendMessage(Config.few_arug);
             sender.sendMessage(Config.help);
             return false;
         }
@@ -73,7 +74,6 @@ public class ItemDatabase extends JavaPlugin {
         }
 
         if (args.length < 2) {
-            sender.sendMessage(Config.few_arug);
             sender.sendMessage(Config.help);
             return false;
         }

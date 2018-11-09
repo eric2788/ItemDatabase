@@ -67,7 +67,8 @@ public class ItemDatabaseManager {
             statement.setString(1,player.getUniqueId().toString());
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()){
-                items.add(1,resultSet.getString("ItemName")+": "+resultSet.getString(itemStackFromBase64(resultSet.getString("ItemStack")).getType().toString()));
+                ItemStack item = itemStackFromBase64(resultSet.getString("ItemStack"));
+                items.add("- §e"+resultSet.getString("ItemName")+"§8: "+item.getType().toString()+" x"+item.getAmount()+"\n§7Name: §f"+item.getItemMeta().getDisplayName()+"\n§7Lore: §f"+item.getItemMeta().getLore());
             }
             return items;
         } catch (SQLException e) {
