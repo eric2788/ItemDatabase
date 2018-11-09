@@ -21,7 +21,12 @@ public class ItemDatabase extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
-        Config.getInstance();
+        Config cf = Config.getInstance();
+        if (!cf.getConfig().getBoolean("enabled")){
+            this.getLogger().info("You haven't correctly set your sql data config, plz change enabled: true after you have set it correctly.");
+            this.getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
         try(Connection connection = MySQLManager.getInstance().getConneciton(); PreparedStatement statement = connection.prepareStatement
                 ("CREATE TABLE IF NOT EXISTS `"+ Config.table +"` (`PlayerUUID` VARCHAR(40) NOT NULL ,  `ItemStack` LONGTEXT NOT NULL, `ItemName` VARCHAR(100) NOT NULL PRIMARY KEY)")
         ){
