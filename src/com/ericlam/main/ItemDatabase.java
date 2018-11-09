@@ -52,6 +52,16 @@ public class ItemDatabase extends JavaPlugin {
             return false;
         }
 
+        if(!sender.hasPermission("itemdb.use")){
+            sender.sendMessage(Config.no_perm);
+            return false;
+        }
+
+        if (args.length < 1) {
+            sender.sendMessage(Config.help);
+            return false;
+        }
+
         ItemDatabaseManager databaseManager = ItemDatabaseManager.getInstance();
         Player player = (Player) sender;
         String cmd = args[0];
@@ -63,10 +73,12 @@ public class ItemDatabase extends JavaPlugin {
         }
 
         if (args.length < 2) {
-            player.sendMessage(Config.few_arug);
-            player.sendMessage(Config.help);
+            sender.sendMessage(Config.few_arug);
+            sender.sendMessage(Config.help);
             return false;
         }
+
+
 
         String itemName = args[1];
 

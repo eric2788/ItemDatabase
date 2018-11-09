@@ -28,6 +28,7 @@ public class Config {
     public static String full_inv;
     public static String list;
     //public static String trade_tag;
+    public static String no_perm;
 
     private Config(){
         Plugin plugin = ItemDatabase.plugin;
@@ -55,6 +56,7 @@ public class Config {
         full_inv = ChatColor.translateAlternateColorCodes('&', prefix +msg.getString("full-inv"));
         list = ChatColor.translateAlternateColorCodes('&',prefix+msg.getString("list"));
         //trade_tag = ChatColor.translateAlternateColorCodes('&',prefix+msg.getString("trade-tag"));
+        no_perm = ChatColor.translateAlternateColorCodes('&',prefix+msg.getString("no-perm"));
     }
 
     public static Config getInstance() {
