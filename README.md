@@ -14,4 +14,4 @@
 一開始插件不會啟動，直到你在 config.yml 把 enabled 調成 true
 
 ### 下載
-[下載插件](http://destyy.com/wXnuMN) | [Mirror](http://www.mediafire.com/file/7ppacc51lxrzqw4/ItemDataBase.jar/file)
+[下載插件](http://corneey.com/wMiYVj) | [Mirror](https://drive.google.com/open?id=1oNFsjsq_0AcOD1CcXqjL6js5gPa5CtZK)
